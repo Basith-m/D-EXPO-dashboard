@@ -1,0 +1,76 @@
+:root {
+  /* Typography */
+  --font-sans: var(--font-inter), -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, sans-serif;
+
+  /* Surface & Canvas Colors */
+  --color-bg-canvas: #F5F7F9;
+  --color-bg-card: #ffffff;
+  --color-bg-subtle: #f7f8fa;
+  --color-bg-dark-hero: #162a20;
+  --color-bg-dark-card: #1a2e23;
+  --color-bg-dark-row: rgba(255, 255, 255, 0.07);
+  --color-bg-glass: rgba(255, 255, 255, 0.1);
+  --color-bg-glass-strong: rgba(255, 255, 255, 0.16);
+
+  /* Brand & Accent Colors */
+  --color-gold: #FFCB76;
+  --color-gold-hover: #dca130;
+  --color-gold-text: #c98a1f;
+  --color-gold-soft: rgba(232, 176, 66, 0.16);
+  --color-forest: #2E7D5B;
+  --color-forest-dark: #195d39;
+  --color-ochre: #C58A2B;
+  --color-coral: #C6534D;
+
+  /* Metric Tile Accents */
+  --color-tile-blue: #2563eb;
+  --color-tile-red: #dc3545;
+  --color-tile-amber: #c98a1f;
+  --color-tile-purple: #7c3aed;
+  --color-tile-green: #22a06b;
+
+  /* Soft Activity Icon Backgrounds */
+  --color-soft-green-bg: #e7f6ee;
+  --color-soft-green-fg: #1f8a52;
+  --color-soft-amber-bg: #fef5e3;
+  --color-soft-amber-fg: #c98a1f;
+  --color-soft-blue-bg: #e8f1fe;
+  --color-soft-blue-fg: #2563eb;
+
+  /* Text Colors */
+  --color-text-primary: #141b17;
+  --color-text-secondary: #64706a;
+  --color-text-muted: #8a958f;
+  --color-text-inverse: #ffffff;
+  --color-text-inverse-muted: rgba(255, 255, 255, 0.75);
+
+  /* Borders & Dividers */
+  --color-border: #e9eceb;
+  --color-border-subtle: #f0f2f1;
+  --color-border-strong: #EBEBEB;
+  --color-border-glass: rgba(255, 255, 255, 0.18);
+
+  /* Radii */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-pill: 9999px;
+
+  /* Shadows */
+  --shadow-card: 0 2px 12px rgba(17, 24, 39, 0.04);
+  --shadow-elevated: 0 8px 24px rgba(17, 24, 39, 0.08);
+
+  /* Layout & Spacing */
+  --container-max: 1400px;
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 20px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+
+  /* Transitions */
+  --transition-fast: 150ms ease;
+  --transition-base: 220ms ease;
+}

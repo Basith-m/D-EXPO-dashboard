@@ -1,0 +1,170 @@
+.card {
+  height: 100%;
+  border-radius: var(--radius-lg);
+  padding: 22px;
+  background: linear-gradient(0deg, #1C3427, #1C3427), linear-gradient(123.52deg, rgba(255, 255, 255, 0.1) 2.44%, rgba(28, 52, 39, 0.1) 69.92%);
+  color: var(--color-text-inverse);
+  box-shadow: var(--shadow-card);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trophyBox {
+  width: 42px;
+  height: 42px;
+  border-radius: 11px;
+  background-color: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.trophyIcon {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  line-height: 1.25;
+}
+
+.period {
+  margin-top: 2px;
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.list {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, rgba(255, 203, 118, 0.16) 0%, rgba(255, 255, 255, 0.16) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color var(--transition-fast);
+}
+
+.row:hover {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  min-width: 0;
+}
+
+.rankNumber {
+  width: 14px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.earnerAvatar {
+  background: linear-gradient(180deg, #3E5E4D 0%, #1C3427 100%);
+  color: var(--color-gold);
+}
+
+.identity {
+  min-width: 0;
+}
+
+.name {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.25;
+}
+
+.code {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.52);
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.amount {
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: var(--color-gold);
+}
+
+.rankBadge {
+  min-width: 28px;
+  padding: 4px 8px;
+  border-radius: var(--radius-pill);
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.82);
+}
+
+.rankBadgeFirst {
+  background-color: var(--color-gold);
+  color: #17271d;
+  font-weight: 700;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .row {
+    padding: 8px 10px;
+  }
+
+  .right {
+    flex-direction: column;
+  }
+
+  .name {
+    font-size: 0.78rem;
+  }
+
+  .code {
+    font-size: 0.68rem;
+  }
+
+  .amount {
+    font-size: 0.78rem;
+  }
+}

@@ -1,0 +1,21 @@
+.avatar {
+  position: relative;
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #294636;
+  color: var(--color-text-inverse);
+  font-weight: 600;
+  user-select: none;
+}
+
+.ring {
+  border: 2px solid var(--color-gold);
+}
+
+.image {
+  object-fit: cover;
+}

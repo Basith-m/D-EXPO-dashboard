@@ -1,0 +1,40 @@
+.heading {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 14px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.labelGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  min-width: 0;
+}
+
+.icon {
+  color: var(--color-text-muted);
+  flex-shrink: 0;
+}
+
+.value {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  white-space: nowrap;
+}

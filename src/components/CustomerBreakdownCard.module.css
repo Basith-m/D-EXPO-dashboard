@@ -1,0 +1,170 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-md);
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+.title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+}
+
+.viewAllLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  background-color: #fdf6e7;
+  color: var(--color-gold-text);
+  font-size: 0.78rem;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: background-color var(--transition-fast);
+}
+
+.viewAllLink:hover {
+  background-color: #f9ebd0;
+}
+
+.body {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: minmax(210px, 0.88fr) minmax(0, 1.38fr);
+  gap: 36px;
+  align-items: center;
+}
+
+.customerList {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.customerRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.rowLabel {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.rowValue {
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+}
+
+.incomeSection {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 0;
+}
+
+.incomeTop {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.breakdownBlock {
+  flex: 1;
+  min-width: 0;
+}
+
+.breakdownTitle {
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 14px;
+}
+
+.breakdownList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.breakdownRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: baseline;
+  gap: 14px;
+}
+
+.breakdownLabel {
+  font-size: 0.82rem;
+  color: var(--color-text-secondary);
+  white-space: nowrap;
+}
+
+.breakdownPercent {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  text-align: right;
+  min-width: 34px;
+}
+
+.breakdownPercentMuted {
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.breakdownAmount {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  text-align: right;
+  min-width: 74px;
+}
+
+.settlementNote {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.74rem;
+  color: var(--color-text-muted);
+  align-self: flex-end;
+}
+
+.noteIcon {
+  flex-shrink: 0;
+}
+
+@media (max-width: 960px) {
+  .body {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .settlementNote {
+    align-self: flex-start;
+  }
+}
+
+@media (max-width: 560px) {
+  .incomeTop {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .breakdownBlock {
+    width: 100%;
+  }
+
+  .settlementNote {
+    align-items: flex-start;
+    line-height: 1.4;
+  }
+}

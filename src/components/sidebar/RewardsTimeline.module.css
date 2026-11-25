@@ -1,0 +1,83 @@
+.heading {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  margin-bottom: 18px;
+}
+
+.list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 54px;
+}
+
+/* Subtle vertical track connecting milestone circles */
+.list::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  bottom: 14px;
+  width: 1.5px;
+  background-color: var(--color-border);
+}
+
+.item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.marker {
+  width: 14px;
+  height: 14px;
+  border-radius: var(--radius-pill);
+  background-color: var(--color-bg-card);
+  border: 1.5px solid #c5ccc8;
+  flex-shrink: 0;
+  z-index: 1;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+}
+
+.thumbWrap {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  overflow: hidden;
+  flex-shrink: 0;
+  background-color: var(--color-bg-subtle);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thumb {
+  object-fit: contain;
+}
+
+.textGroup {
+  min-width: 0;
+}
+
+.title {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--color-text-primary);
+  line-height: 1.25;
+}
+
+.milestone {
+  margin-top: 2px;
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}

@@ -1,0 +1,304 @@
+.heroSection {
+  position: relative;
+  width: 100%;
+  isolation: isolate;
+}
+
+/* Dark misty forest backdrop stops 26px above the bottom so white KPI cards overlap cleanly */
+.heroBackdrop {
+  position: absolute;
+  inset: 0 0 26px 0;
+  z-index: -1;
+  background-image: linear-gradient(
+    180deg,
+    rgba(16, 34, 25, 0.45) 0%,
+    rgba(18, 41, 30, 0.38) 52%,
+    rgba(14, 31, 22, 0.52) 100%
+    ),
+    url('/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center 35%;
+  background-repeat: no-repeat;
+}
+
+.heroInner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  padding: 36px var(--space-xl) 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 80px;
+}
+
+.leftColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.locationRow {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.86);
+  margin-bottom: 6px;
+}
+
+.locationPin {
+  color: var(--color-gold);
+  flex-shrink: 0;
+}
+
+.greeting {
+  font-size: clamp(1.55rem, 2.5vw, 2.05rem);
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.92);
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+}
+
+.greeting strong {
+  font-weight: 700;
+  color: var(--color-text-inverse);
+}
+
+.balanceGrid {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 720px;
+}
+
+.balanceCard {
+  background-color: var(--color-bg-card);
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: var(--shadow-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.balanceLabel {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+  margin-bottom: 6px;
+}
+
+.balanceValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-primary);
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+}
+
+/* Frosted Glass Promoter Profile Card */
+.profileCard {
+  width: 100%;
+  max-width: 600px;
+  justify-self: end;
+  flex-shrink: 0;
+  margin-bottom: 26px;
+  padding: 24px 28px;
+  border-radius: 20px;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(25, 48, 35, 0.42) 100%
+  );
+  border: 1px solid #FFFFFF66;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  color: var(--color-text-inverse);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  border-width: 1.29px, 1.29px, 0px, 1.29px;
+}
+
+.profileTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.profileIdentity {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.profileLocation {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  color: #e4c678;
+  margin-bottom: 2px;
+}
+
+.profileName {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text-inverse);
+  line-height: 1.2;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.incomeBlock {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.incomeLabel {
+  font-size: 0.72rem;
+  color: rgba(255, 255, 255, 0.72);
+  margin-bottom: 2px;
+}
+
+.incomeValue {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--color-text-inverse);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+}
+
+.incomeTrend {
+  font-size: 0.68rem;
+  color: #b7e4c7;
+  margin-top: 3px;
+}
+
+.profileBottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.metaStack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.promoterCode {
+  font-size: 0.84rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.92);
+  margin-right: 4px;
+}
+
+.statusPill {
+  font-size: 0.69rem;
+  font-weight: 500;
+  padding: 3px 8px;
+  border-radius: 6px;
+  background-color: rgba(212, 180, 90, 0.2);
+  border: 1px solid rgba(212, 180, 90, 0.28);
+  color: #edd593;
+  white-space: nowrap;
+}
+
+.rolePill {
+  display: inline-flex;
+  align-self: flex-start;
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.14);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.withdrawBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  background-color: var(--color-bg-card);
+  color: var(--color-text-primary);
+  font-size: 0.85rem;
+  font-weight: 600;
+  white-space: nowrap;
+  flex-shrink: 0;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.withdrawBtn:hover {
+  background-color: #f3f5f4;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 1320px) {
+  .heroInner {
+    gap: 64px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .heroInner {
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--space-lg);
+    padding-bottom: 24px;
+  }
+
+  .heroBackdrop {
+    inset: 0;
+  }
+
+  .balanceGrid {
+    max-width: none;
+  }
+
+  .profileCard {
+    width: 100%;
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroInner {
+    padding: 24px var(--space-md) 20px;
+  }
+
+  .balanceGrid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-top: 20px;
+  }
+
+  .profileTop {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .incomeBlock {
+    text-align: left;
+  }
+
+  .profileBottom {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .withdrawBtn {
+    justify-content: center;
+  }
+}
